@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    /* background: white; */
+}
+/* elemts style */
+.btn{
+    background: blue;
+    padding: 15px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+    /* form style */
+.box-form{
+    width: 100%;
+    height: auto;
+    /* background: red; */
+}
+.box-form label{
+    display: block;
+    margin-bottom: 10px;
+}
+.box-form input{
+    display: block;
+    width: 100%;
+    height: 3vh;
+    border-radius: 3%;
+    margin-bottom: 10px;
+}
+/* style header */
+
+header{
+    width: 100vw;
+    height: 70px;
+}
+.header-left{
+    width: 15vw;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    text-transform: uppercase;
+    float: left;
+}
+.header-right{
+    width: auto;
+    height: 100%;
+    float: right;
+    text-transform: uppercase;
+}
+.header-right a{
+    color: #000;
+}
+.header-right li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.header-right li:hover{
+    text-decoration: underline;
+}
+main{
+    width: 100vw;
+    height: auto;
+    /* background: green; */
+    /* background: #cecece; */
+}
+
+/* style table */
+.table{
+    width: 100%;
+}
+.table thead{
+    background-color: #cecece;
+}
+.table th,td{
+    text-align: center;
+    padding: 5px;
+}
+.table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+ /* style page contact */
+.styleContact{
+    width: 80%;
+    margin: 0 auto;
+}
+.styleContact label,textarea{
+    display: block;
+    margin-top: 2%;
+}
+.styleContact input{
+    width: 60%;
+    height: 40px;
+    margin-top: 2%;
+}
+ /* style card homepage */
+
+.box-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: calc(100% / 4);
+    height: auto;
+    margin: 10px 5px;
+    text-align: center;
+    background: #cecece;
+}
+.card h2{
+    margin-top: 20px;
+}
+.card p{
+    margin: 10px;
+}
+
+/* style footer */
+
+footer{
+    width: 100vw;
+    height: 100px;
+    background: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+footer .item{
+    width: calc(100% / 3);
+    text-align: center;
+    float: left;
+}
+.item li{
+    list-style: none;
+    margin: 0.5%;
+}
