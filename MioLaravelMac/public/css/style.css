@@ -18,6 +18,27 @@
     text-decoration: none;
     color: white;
 }
+.box-button{
+     width: 400px;
+    margin: 20px auto;
+}
+.btn-save{
+    width: 100px;
+    height: 50px;
+    border-radius: 30%;
+    background: blue;
+    color: white;
+}
+.btn-save:hover{
+    background-color: rgba(0,0,0, 0.5);
+}
+.btn-back{
+    background: black;
+}
+.btn-back a{
+    color: white;
+    text-decoration: none;
+}
     /* form style */
 .box-form{
     width: 100%;
@@ -40,6 +61,7 @@
 header{
     width: 100vw;
     height: 70px;
+    border-bottom: 1px solid black;
 }
 .header-left{
     width: 15vw;
@@ -119,6 +141,10 @@ main{
     text-align: center;
     background: #cecece;
 }
+.card img{
+    margin-top: 10px;
+    width: 200px;
+}
 .card h2{
     margin-top: 20px;
 }
@@ -144,4 +170,7 @@ footer .item{
 .item li{
     list-style: none;
     margin: 0.5%;
+}
+.social a{
+    color: white;
 }

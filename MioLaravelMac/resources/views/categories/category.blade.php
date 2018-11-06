@@ -2,30 +2,30 @@
 
 @section('content')
     <div class="container">
-        <h1>indice dei prodotti</h1>
-        <button  class="btn" type="button" name="button"><a href="{{ route('createProduct') }}">Crea un nuovo prodotto<a></button>
-    </div>
-    <div class="container">
+        <h2>Categorie prodotti</h2>
+        <button type="button" class="btn"><a href="{{ route('createCategory') }}">Crea una nuova categoria</a></button>
+
+        {{-- mostra le categorie --}}
+
         <table class="table">
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Titolo</th>
+                    <th>name</th>
                     <th>Descrizione</th>
-                    <th>Prezzo</th>
+                    <th>Is_active</th>
                     <th>Slug</th>
                     <th>Edit</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach($products as $product)
+                @foreach($categorys as $category)
                     <tr>
-                    
-                        <td> {{ $product->id }} </td>
-                        <td> {{ $product->title }} </td>
-                        <td> {{ str_limit($product->description, 20, '[...]') }} </td>
-                        <td> {{ $product->price }} </td>
-                        <td> {{ $product->slug }} </td>
+                        <td>{{ $category->id }}</td>
+                        <td>{{ $category->name }}</td>
+                        <td>{{ str_limit($category->description, 20, '[...]') }}</td>
+                        <td>{{ $category->is_active }}</td>
+                        <td>{{ $category->category_slug }}</td>
                         <td>
                             <button type="button" name="button" class="btn">
                                 <a href="#">edit</a>

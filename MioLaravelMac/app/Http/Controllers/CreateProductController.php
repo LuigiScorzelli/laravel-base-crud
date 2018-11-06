@@ -8,7 +8,7 @@ use App\Product;
 class CreateProductController extends Controller
 {
     public function indexCreate(){
-        
+
         $data=[
             'title' => 'Crea un nuovo prodotto',
         ];
@@ -21,16 +21,18 @@ class CreateProductController extends Controller
         $data= $request->all();
 
         if(empty($data['title']) || empty($data['price'])){
+
+            // prova check img
+            // if (empty(filter_var($data['img'], FILTER_VALIDATE_URL))) {
+            //     dd($data['img']);
+            // }
+
+            ////
             return 'error';
         }
 
         $data['slug'] = str_slug($data['title']);
 
-
-        // $product->title= $data['title'];
-        // $product->description= (!empty($data['description'])) ? $data['description'] : null;
-        // $product->price= $data['price'];
-        // $product->slug= str_slug($data['title']);
 
         $product = new Product();
         $product->fill($data);

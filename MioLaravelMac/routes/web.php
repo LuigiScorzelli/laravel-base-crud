@@ -20,3 +20,9 @@ Route::get('/prodotto/nuovoProdotto', 'CreateProductController@indexCreate')->na
 Route::post('/prodotto/nuovoProdotto', 'CreateProductController@save')->name('saveProduct');
 // route contact
 Route::get('/contatti', 'contactController@contact')->name('contact');
+// route categories
+Route::get('/categorie', 'categoriesController@category')->name('categories');
+// route create category
+Route::get('/categorie/nuovaCategoria', 'createCategoryController@create')->name('createCategory');
+// route save category
+Route::post('/categorie/nuovaCategoria', 'createCategoryController@save')->name('saveCategory');

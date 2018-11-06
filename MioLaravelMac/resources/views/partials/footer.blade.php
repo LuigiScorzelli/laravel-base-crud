@@ -14,12 +14,24 @@
             </ul>
         </div>
 
-        <div class="item">
+        <div class="item social">
             <ul>
                 <li><h4>Social</h4></li>
-                <li><i class="fab fa-facebook-square"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-google-plus-square"></i></li>
+                <li>
+                    <a href="https://www.facebook.com/login">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/login">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.google.it/">
+                        <i class="fab fa-google-plus-square"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

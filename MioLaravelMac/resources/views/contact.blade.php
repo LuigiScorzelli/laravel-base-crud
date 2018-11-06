@@ -12,8 +12,11 @@
 
             <label for="testo"><h3>Inserisci la tua richiesta</h3></label>
             <textarea name="name" rows="8" cols="120"></textarea>
-            {{-- <button type="button" name="button" class="btn">Invia</button> --}}
-            <input type="button" value="Invia">
+
+            <div class="box-button">
+                <button type="button" name="button" class="btn-save">Invia</button>
+            </div>
+        
 
         </div>
 
