@@ -16,18 +16,62 @@ class CreateProductController extends Controller
         return view('products.create', $data);
     }
 
+    // cancella prodotto dalla tabella
+
+    public function delete(Product $id){
+
+        $id->delete();
+
+        return redirect()->route('products');
+
+    }
+
+    // modifica prodotto per id
+
+    public function edit($id){
+
+        $product = Product::find($id);
+
+
+        return view('products.edit', ['product' => $product]);
+
+    }
+     //  save edit
+
+    public function change(Product $product, Request $request){
+
+        $data = $request->all();
+
+
+        $product->fill($data);
+
+        // is_active
+        if($request->input('is_active') == null){
+            $product->is_active = false;
+        }else{
+            $product->is_active = true;
+        }
+
+        // special
+
+        if($request->input('special') == null){
+            $product->special = false;
+        }else{
+            $product->special = true;
+        }
+
+        $product->save();
+
+        return redirect()->route('products');
+
+    }
+
     public function save(Request $request){
 
         $data= $request->all();
 
         if(empty($data['title']) || empty($data['price'])){
 
-            // prova check img
-            // if (empty(filter_var($data['img'], FILTER_VALIDATE_URL))) {
-            //     dd($data['img']);
-            // }
-
-            ////
             return 'error';
         }
 

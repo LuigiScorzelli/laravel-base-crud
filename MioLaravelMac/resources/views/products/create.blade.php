@@ -19,7 +19,6 @@
                 <label for="description">Descrizione</label>
                 <textarea name="description" rows="12" cols="200" placeholder="inserisci una descrizione"></textarea>
 
-                {{-- <input type="submit"  value="Salva" class="btn-save"/> --}}
 
                 <div class="box-button">
                     <button type="button" name="button" class="btn-save btn-back">

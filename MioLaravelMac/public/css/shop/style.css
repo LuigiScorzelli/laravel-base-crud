@@ -1,0 +1,155 @@
+                /* style layout shop */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /* style elements */
+
+.container{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+ /* style header */
+header{
+    width: 100vw;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: #212529;
+    z-index: 1;
+}
+.header-logo{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+}
+.header-logo img{
+    width: 30%;
+    height: 50%;
+    height: 50px;
+}
+.box-nav{
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/*   style footer */
+footer{
+    width: 100vw;
+    height: 15vh;
+    background: #212529;
+}
+.box-footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px 0;
+}
+.item-footer{
+    width: calc(100% / 3);
+    height: auto;
+    text-align: center;
+    color: white;
+}
+.item-footer a{
+    color: white;
+    cursor: pointer;
+}
+.item-footer h4{
+    color: blue;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.item-footer li{
+    list-style: none;
+    margin: 5px 0;
+}
+        /* main style */
+
+.container-main{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 400px;
+    height: 200px;
+    margin: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #343A40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.card h2{
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.card .card-div{
+    width: 60%;
+    height: 50%;
+    background: #F8F9FA;
+    border-radius: 21px 21px 0 0;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+ /* style special */
+.card-special{
+    width: 400px;
+    height: 200px;
+    margin: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    background: green;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.card-special h2{
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.card-special .card-div{
+    width: 60%;
+    height: 50%;
+    background: #F8F9FA;
+    border-radius: 21px 21px 0 0;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}

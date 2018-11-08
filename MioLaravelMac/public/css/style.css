@@ -16,7 +16,11 @@
 }
 .btn a{
     text-decoration: none;
+    text-transform: uppercase;
     color: white;
+}
+.btn-bkg{
+    background: red;
 }
 .box-button{
      width: 400px;

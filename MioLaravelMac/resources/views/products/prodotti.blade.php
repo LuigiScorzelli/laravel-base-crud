@@ -15,20 +15,29 @@
                     <th>Prezzo</th>
                     <th>Slug</th>
                     <th>Edit</th>
+                    <th>Delete</th>
+
                 </tr>
             </thead>
             <tbody>
                 @foreach($products as $product)
                     <tr>
-                    
+
                         <td> {{ $product->id }} </td>
                         <td> {{ $product->title }} </td>
                         <td> {{ str_limit($product->description, 20, '[...]') }} </td>
                         <td> {{ $product->price }} </td>
                         <td> {{ $product->slug }} </td>
+
                         <td>
                             <button type="button" name="button" class="btn">
-                                <a href="#">edit</a>
+                                <a href="{{ route('edit', [ 'id' => $product->id]) }}">edit</a>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" name="button" class=" btn btn-bkg">
+                                <a href="{{ route('delete', [ 'id' => $product->id]) }}">delete</a>
                             </button>
                         </td>
                     </tr>

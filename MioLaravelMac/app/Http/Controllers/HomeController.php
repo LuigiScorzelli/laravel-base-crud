@@ -9,13 +9,13 @@ class HomeController extends Controller
 {
     public function indexHome(){
 
-        $product = Product::all();
+        $product = Product::where('is_active', true)->get();
 
         $data=[
             'title' => 'HomeShop-laravel',
             'products' => $product
         ];
 
-        return view('homePage', $data);
+        return view('layout.layoutShop.homeShop', $data);
     }
 }
