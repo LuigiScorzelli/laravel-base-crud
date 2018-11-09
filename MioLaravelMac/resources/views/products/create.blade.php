@@ -16,6 +16,13 @@
                 <label for="price">Prezzo</label>
                 <input type="number" name="price" placeholder="inserisci il prezzo del prodotto" required/>
 
+                <label for="category_id">Categoria</label>
+                <select  name="category_id">
+                    @foreach ($categories as $category)
+                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                    @endforeach
+                </select>
+
                 <label for="description">Descrizione</label>
                 <textarea name="description" rows="12" cols="200" placeholder="inserisci una descrizione"></textarea>
 

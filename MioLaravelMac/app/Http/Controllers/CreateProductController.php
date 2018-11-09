@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\Category;
 
 class CreateProductController extends Controller
 {
@@ -11,19 +12,10 @@ class CreateProductController extends Controller
 
         $data=[
             'title' => 'Crea un nuovo prodotto',
+            'categories' => Category::all()
         ];
 
         return view('products.create', $data);
-    }
-
-    // cancella prodotto dalla tabella
-
-    public function delete(Product $id){
-
-        $id->delete();
-
-        return redirect()->route('products');
-
     }
 
     // modifica prodotto per id
@@ -36,6 +28,17 @@ class CreateProductController extends Controller
         return view('products.edit', ['product' => $product]);
 
     }
+
+    // cancella prodotto dalla tabella
+
+    public function delete(Product $id){
+
+        $id->delete();
+
+        return redirect()->route('products');
+
+    }
+    
      //  save edit
 
     public function change(Product $product, Request $request){

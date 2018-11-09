@@ -2,7 +2,10 @@
 
 @section('content')
     <div class="container">
-        <h1>Modifica prodotto</h1>
+        <div class="title">
+            <h1>Modifica prodotto - </h1>
+            <small> {{ $product->title}}</small>
+        </div>
         <div class="box-form">
             <form method="post" action="{{ route('change', ['id' => $product->id]) }}">
                 {{ csrf_field() }}

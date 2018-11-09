@@ -37,5 +37,12 @@ Route::prefix('admin')->group(function(){
         Route::get('/categorie/nuovaCategoria', 'createCategoryController@create')->name('createCategory');
             // route save category
         Route::post('/categorie/nuovaCategoria', 'createCategoryController@save')->name('saveCategory');
-
+            // Route delete category
+        Route::get('/categorie/cancella/{id}', 'createCategoryController@delete')->name('deleteCategory');
+            //edit category per id
+        Route::get('/categorie/modifica/{id}', 'createCategoryController@edit')->name('editCategory');
+            // salva le modifiche
+        Route::post('/categorie/modifica/{id}', 'createCategoryController@change')->name('changeCategory');
+            // prodotti associati alle categorie
+        Route::get('/categorie/prodottiAssociati/{category}', 'createCategoryController@products')->name('productsCategory');
 });

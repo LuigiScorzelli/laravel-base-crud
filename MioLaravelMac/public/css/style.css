@@ -43,6 +43,14 @@
     color: white;
     text-decoration: none;
 }
+.title h1{
+    display: inline-block;
+}
+.title small{
+    color: red;
+    font-size: 30px;
+    text-transform: uppercase;
+}
     /* form style */
 .box-form{
     width: 100%;

@@ -18,4 +18,5 @@ class categoriesController extends Controller
 
         return view('categories.category', $data);
     }
+
 }
